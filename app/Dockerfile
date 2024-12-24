@@ -1,9 +1,9 @@
-FROM openjdk:17-slim
+FROM openjdk:21-jdk-slim
 
 WORKDIR /app
 
-COPY target/app.jar /app/demo.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar demo.jar
 
 EXPOSE 3000
 
-CMD["java", "jar", "/app/demo.jar"]
+ENTRYPOINT["java", "jar", "demo.jar"]
