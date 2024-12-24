@@ -7,6 +7,7 @@
 /home/sebastian/Documentos/Programacion/deploy_finanzas/Backend_Java_Finanzas_App/app/src/main/java/com/example/tryJwt/demo/Controller/TokenResponse.java
 /home/sebastian/Documentos/Programacion/deploy_finanzas/Backend_Java_Finanzas_App/app/src/main/java/com/example/tryJwt/demo/Controller/UsersController.java
 /home/sebastian/Documentos/Programacion/deploy_finanzas/Backend_Java_Finanzas_App/app/src/main/java/com/example/tryJwt/demo/DemoApplication.java
+/home/sebastian/Documentos/Programacion/deploy_finanzas/Backend_Java_Finanzas_App/app/src/main/java/com/example/tryJwt/demo/Modelo/Spent.java
 /home/sebastian/Documentos/Programacion/deploy_finanzas/Backend_Java_Finanzas_App/app/src/main/java/com/example/tryJwt/demo/Modelo/Users.java
 /home/sebastian/Documentos/Programacion/deploy_finanzas/Backend_Java_Finanzas_App/app/src/main/java/com/example/tryJwt/demo/Repository/Token.java
 /home/sebastian/Documentos/Programacion/deploy_finanzas/Backend_Java_Finanzas_App/app/src/main/java/com/example/tryJwt/demo/Repository/TokenRepository.java
