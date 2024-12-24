@@ -9,6 +9,7 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,12 +30,13 @@ import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
+@AllArgsConstructor
 @Service
 public class JwtAuthFilter extends OncePerRequestFilter {
     @Autowired
     private JwtService jwtService;
     @Autowired
-    private UserDetailsService userDetailsService;
+    private  UserDetailsService userDetailsService;
     @Autowired
     private TokenRepository tokenRepository;
     @Autowired
