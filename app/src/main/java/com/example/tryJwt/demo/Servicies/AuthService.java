@@ -24,7 +24,6 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 @AllArgsConstructor
-@NoArgsConstructor
 public class AuthService {
     @Autowired
   private  PasswordEncoder passwordEncoder;
