@@ -5,13 +5,13 @@ EXPOSE 8080
 WORKDIR /app
 ## Copiar y pegar dentro del contenedor
 COPY ./pom.xml /app
-COPY ./.mvn /root/.mvn
-COPY ./mvnw /root
+COPY ./.mvn /app/.mvn
+COPY ./mvnw /app
 ## Descargar las dependencias
 RUN ./mvnw dependency:go-offline
 ## Copiar el código fuente
 #COPY target/demo-0.0.1-SNAPSHOT.jar demo.jar
-COPY ./src /root/src
+COPY ./src /app/src
 ## construir nuestra aplicación
 RUN ./mvnw clean install -DskipTests
 ## Levantar nuestra aplicación cuando el contenedor inicie
