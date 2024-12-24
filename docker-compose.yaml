@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    build: app
+    mem_limits: 512m
+    ports:
+        - "8080":"8080"
+    enviroments:
+        database_url: jdbc:mysql://localhost:3306/database
+        database_username: root
+        database_password: 123
+    restart: always
+    depends_on:
+        database: service_healthy
+    database:
+        image:mysql:8.0.3
