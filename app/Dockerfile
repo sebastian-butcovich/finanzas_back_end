@@ -15,4 +15,4 @@ COPY ./src /app/src
 ## construir nuestra aplicación
 RUN ./mvnw clean install -DskipTests
 ## Levantar nuestra aplicación cuando el contenedor inicie
-ENTRYPOINT ["java", "-jar", "app/target/demo.jar"]
+ENTRYPOINT ["java", "-jar", "app/target/demo-0.0.1-SNAPSHOT.jar"]
