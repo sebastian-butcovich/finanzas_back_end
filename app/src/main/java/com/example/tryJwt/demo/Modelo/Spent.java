@@ -15,7 +15,7 @@ import java.util.Date;
 public class Spent {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Integer id;
     @Column(name = "nombre")
     private String nombre;
     @Column(name = "descripción")
