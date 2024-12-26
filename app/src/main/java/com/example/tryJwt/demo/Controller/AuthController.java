@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Controller
 @RequiredArgsConstructor
-@CrossOrigin
+@CrossOrigin(origins = "https://myapp-finanzasindicate.com/")
 @RequestMapping("auth")
 public class AuthController {
     @Autowired
